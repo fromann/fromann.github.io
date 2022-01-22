@@ -1,0 +1,73 @@
+  span{
+    width: 10%;
+    color: #ff6600;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    /* 鼠标样式 */
+    cursor: pointer;
+  } 
+  input {
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #ffcc33;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffccff;
+  }
+
+  @keyframes bBottom {
+    50% {
+      border-bottom: 1px solid #a6c1ee;
+    }
+  }
+  .btn {
+    height: 40px;
+    width: 80%;
+    line-height: 20px;
+    /* 字体 */
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    /* 鼠标样式 */
+    cursor: pointer;
+    /* 边框、背景 */
+    border-radius: 10px;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee, #fbc2eb);
+    background-size: 200%;
+  }
+  .btn:hover {
+    animation: btnAnimate 1s infinite;
+  }
+  @keyframes btnAnimate {
+    50% {
+      background-position: 200%;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ff00b7;
+  }
+  .select{
+  background: #fff;
+  width: 70%;
+  height: 40px;
+  border-radius: 10px;
+  color: #000;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    /* 鼠标样式 */
+    cursor: pointer;
+    border-bottom: 2px solid #ffccff;
+  }
+  option
+  {
+  text-align:center;
+  }
