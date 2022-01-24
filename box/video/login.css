@@ -1,4 +1,4 @@
-  span{
+  .ananspan{
     width: 10%;
     color: #ff6600;
     font-weight: bold;
@@ -7,14 +7,15 @@
     /* 鼠标样式 */
     cursor: pointer;
   } 
-  input {
+  .ananinput {
     width: 80%;
-    margin-top: 20px;
-    padding: 10px;
 
-    border: 0;
+    border: 2;
     outline: none;
-    border-bottom: 2px solid #ffcc33;
+    border-bottom: 2px solid #ffccff;
+    border-top: 2px solid #ff9933;
+    border-left: 2px solid #99ffff;
+    border-right: 2px solid #33ff00;
     border-radius: 10px;
     text-align: center;
     color: #ffccff;
@@ -50,24 +51,34 @@
     }
   }
   
-  a {
-    text-decoration: none;
-    color: #ff00b7;
+a{
+  text-decoration: none;
+  color: #ff00b7;
   }
-  .select{
+  .ananselect{
   background: #fff;
   width: 70%;
   height: 40px;
   border-radius: 10px;
-  color: #000;
+  color: linear-gradient(to right, #fbc2eb, #a6c1ee, #fbc2eb);;
     font-weight: bold;
     letter-spacing: 3px;
     text-align: center;
     /* 鼠标样式 */
     cursor: pointer;
-    border-bottom: 2px solid #ffccff;
+  border-bottom: 2px solid #ffccff;
+  border-top: 2px solid #ff9933;
+  border-left: 2px solid #99ffff;
+  border-right: 2px solid #33ff00;
   }
-  option
-  {
-  text-align:center;
-  }
+ 
+.ananplayer
+{
+width: 800px;
+height: 600px;
+border-radius: 20px;
+border-bottom: 2px solid #ffccff;
+border-top: 2px solid #ff9933;
+border-left: 2px solid #99ffff;
+border-right: 2px solid #33ff00;
+}
