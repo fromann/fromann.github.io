@@ -1444,7 +1444,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: blog;
+  font-family: blog2;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -5649,7 +5649,7 @@ blockquote.pullquote.right {
   color: var(--font-color);
 }
 @font-face {
-  font-family: 'blog';
+  font-family: 'blog2';
   src: url("blog.ttc");
 }
 .search-dialog {
