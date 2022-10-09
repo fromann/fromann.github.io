@@ -5644,10 +5644,6 @@ blockquote.pullquote.right {
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
 }
-@font-face {
-  font-family: 'blog2';
-  src: url("blog.ttc");
-}
 .search-dialog {
   position: fixed;
   top: 100px;
