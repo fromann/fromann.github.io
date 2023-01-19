@@ -1,0 +1,143 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script language="JavaScript">
+        function onload() {
+            var obj = document.getElementById('jk');
+        }
+
+        function fnChange() {}
+
+        function onClear() {
+            document.getElementById("vipurl").value = "";
+        }
+
+        function onPlay() {
+            var oJK = document.getElementById("jk");
+            var sJK = oJK.options[oJK.selectedIndex].value;
+            var sVipUrl = document.getElementById("vipurl").value;
+            var oWin = document.getElementById("play");
+            if (sVipUrl.length > 0) {
+                oWin.src = sJK + sVipUrl;
+            }
+            document.title= document.getElementById("vipurl").value;
+        }
+        function onHome() {
+            window.location.href="https://froan.cn";
+            
+        }
+
+        function iFrameHeight() {
+            var ifm = document.getElementById("play");
+            var subWeb = document.frames ? document.frames["play"].document : ifm.contentDocument;
+            ifm.height = subWeb.body.scrollHeight;
+            ifm.width = subWeb.body.scrollWidth;
+        }
+
+    </script>
+    <title>小安VIP解析</title>
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/fromann/CDN@anan/img/favicon.png">
+      <script type="text/javascript">
+
+        var OriginTitile = document.title;
+
+        var titleTime;
+
+        document.addEventListener('visibilitychange',
+
+            function () {
+
+                if (document.hidden) {
+
+                    document.title = 'φ(>ω<*)好东西哦~ ';
+
+                    clearTimeout(titleTime);
+
+                } else {
+
+                    document.title = '( • ̀ω•́ )✧biu~~ ';
+
+                    titleTime = setTimeout(function () {
+
+                        document.title = OriginTitile;
+
+                    },2000);
+
+                }
+
+            });
+    </script>
+    <link rel="stylesheet" href="./video.css">
+            </style><style id="panai-style">
+                .panai-container { z-index: 99999!important }
+                .panai-popup { font-size: 14px !important }
+                .panai-setting-label { display: flex;align-items: center;justify-content: space-between;padding-top: 20px; }
+                .panai-setting-checkbox { width: 16px;height: 16px; }
+                .btn {line-height: 20px;color: #fff;font-weight: bold;letter-spacing: 3px;text-align: center;cursor: pointer;border-radius: 10px;background: linear-gradient(to right, #fbc2eb, #a6c1ee, #fbc2eb);background-size: 200%;font-size: 20px;}
+                input {padding: 5px;border-radius: 10px;border: 0;outline: none;border-bottom: 1px solid linear-gradient(to right, #fbc2eb, #a6c1ee, #fbc2eb);font-size: 20px;text-align: center;color: #fbc2eb;}
+                input::placeholder{font-weight: bold;color: #acb7c9;}
+                input:focus {animation: bBottom 2s infinite ;}
+        table,
+        tr,
+        td,
+        iframe {padding: 0px;margin: 0px;}
+        .boxcss {margin-top: 5px;margin-bottom: 5px;}
+
+    </style>
+
+        </head>
+
+<body onload="onload()">
+    <table width="100%" align="center" height="100%" border="0" cellpadding="0" cellspacing="0"  style="background: url(https://api.ixiaowai.cn/api/api.php)">
+        <tbody><tr>
+            <td height="8">
+                    <div class="container boxcss">
+                        <div class="row">
+                            <!-- 选择接口 -->
+                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                <select name="jk" id="jk" size="1" onchange="fnChange()" class="form-control" style="border-radius: 10px;padding: 6px;font-size: 18px;color: #f5c2eb;text-align: center;background: #fff;">
+                                    <option value="https://www.1717yun.com/jx/ty.php?url=" selected="">【线路1】</option>
+                                    <option value="https://www.ckplayer.vip/jiexi/?url=" selected="">【线路2】</option>
+                                    <option value="https://z1.m1907.cn/?jx=" selected="">【线路3】</option>
+                                    <option value="https://jx.ab33.top/vip/?url=" selected="">【线路4】</option>
+                                    <option value="https://www.ckmov.vip/api.php?url=" selected="">【线路5】</option>
+									<option value="https://parse.123mingren.com/Bei/?url=" selected="">【接口6】</option>
+									<option value="https://vip.bljiex.cc/?v=" selected="">【接口7】</option>
+									<option value="https://123.1dior.cn/?url=" selected="">【接口8】</option>
+									<option value="https://jx.rdhk.net/?v=" selected="">【接口9】</option>
+									<option value="https://jx.xiaolangyun.com/?url=" selected="">【接口10】</option>
+									<option value="https://www.nxflv.com/?url=" selected="">【接口11】</option>
+									<option value="https://vip.laobandq.com/jiexi.php?url=" selected="">【接口12】</option>
+                                    <option value="https://jx.parwix.com:4433/player/?url=" selected="">【稳定通用】</option>
+                                    
+                                    <option value="https://z1.m1907.cn/?jx=" selected="">【剧名搜索源】</option>
+                                    <option value="https://okjx.cc/?url=" selected="">【高速稳定】</option>
+                                </select>
+                            </div>
+                            <!-- 选择接口结束 -->
+                            <!-- 视频地址 -->
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="input" name="vipurl" id="vipurl" placeholder="将VIP视频网址粘贴在这里~~" style="width: 100%;">
+                            </div>
+                            <!-- 视频地址结束 -->
+                            <div class="col-md-2 col-sm-2 col-xs-6">
+                                <input type="button" value="播放" onclick="onPlay()" class="btn" style="width: 100%;">
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-xs-6">
+                                <input type="button" value="清除" onclick="onClear()" class="btn" style="width: 100%;">
+                            </div>
+                    </div>
+                </form>
+                    </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe  src="./saved_resource.html" name="play" id="play" width="100%" align="center" height="100%" frameborder="0" marginheight="0" allowfullscreen="true" marginwidth="0" scrolling="no" style="no-repeat:center;">
+                </iframe>
+            </td>
+        </tr>
+    </tbody></table>
+
+
+</body></html>
